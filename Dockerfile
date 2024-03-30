@@ -13,6 +13,9 @@ WORKDIR /app
 # Copy the package.json and package-lock.json files to the container
 COPY package*.json ./
 
+# Copy pnpm-lock.yaml file to the container
+COPY pnpm-lock.yaml ./
+
 # Change the user to root
 USER root
 
